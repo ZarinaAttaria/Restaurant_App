@@ -116,8 +116,8 @@ p {
 }
 
 .center-container1 {
-  height: 256px;
-  width: 150vh;
+  height: 236px;
+  width: 160vh;
 
   display: flex;
   gap: 3%;
@@ -144,8 +144,10 @@ p {
   width: 100%;
 }
 .masterChefImage {
-  height: 30%;
-  width: 40%;
+  margin-top: 10%;
+  height: 25%;
+  width: 30%;
+  margin-left: 4%;
 }
 .masterChefHeading {
   margin-left: 8%;
