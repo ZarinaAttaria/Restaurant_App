@@ -157,7 +157,7 @@ h1 {
   margin-left: 8%;
 }
 .aboutUs-container {
-  height: 800px;
+  height: 700px;
 
   background-color: #e7ecf8;
   display: flex;
@@ -166,9 +166,9 @@ h1 {
 }
 .aboutUs-centerContainer {
   height: 70%;
-  width: 70%;
+  width: 80%;
   display: flex;
-  gap: 16%;
+  gap: 26%;
 }
 
 .restaurant-images-Conatainer {
@@ -178,7 +178,7 @@ h1 {
 }
 .restaurant-images-Container1 {
   display: flex;
-  gap: 2%;
+  gap: 3%;
 }
 .years {
   font-size: 60px;
@@ -214,28 +214,28 @@ h1 {
 }
 
 .restaurant1-Image {
-  width: 75%;
+  width: 90%;
 
-  height: 110%;
+  height: 100%;
 }
 .restaurant2-Image {
-  width: 60%;
-  margin-top: 14%;
+  width: 70%;
+  margin-top: 18%;
   /* margin-right: 108%; */
-  height: 90%;
+  height: 80%;
 }
 .restaurant3-Image {
-  width: 60%;
+  width: 70%;
 
-  height: 90%;
-  margin-left: 15%;
-  margin-top: 10%;
+  height: 80%;
+  margin-left: 20%;
+  margin-top: 4%;
 }
 .restaurant4-Image {
-  width: 75%;
-  margin-top: 10%;
+  width: 90%;
+  margin-top: 4%;
 
-  height: 110%;
+  height: 100%;
 }
 .aboutUS-container2 {
   margin-top: 5%;
@@ -259,4 +259,104 @@ h1 {
   margin: 0;
   padding: 0;
   color: #fea116;
+}
+.foodMenu-Container {
+  height: 819px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foodMenuContainer-Center {
+  height: 626.69px;
+  width: 80%;
+}
+.foodMenu-Top {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.foodMenuIcons {
+  width: 25%;
+  height: 50%;
+}
+.foodMenu-Top1 {
+  display: flex;
+  width: 15%;
+  margin-top: 2%;
+  border-bottom: 1px solid #bbbab8;
+}
+
+.foodMenu-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  gap: 0;
+}
+.h3 {
+  margin-left: 10%;
+  margin-top: 0%;
+
+  padding: 0;
+}
+.p4 {
+  margin-left: 10%;
+  margin-top: 0%;
+  margin-bottom: 0;
+}
+.line {
+  width: 50%;
+}
+.Breakfast-container {
+  border-bottom: 2px solid #fea116;
+}
+.foodMenu-heading {
+  font-family: "Dancing Script", cursive;
+  color: #fea116;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Top3 {
+  margin-left: 0;
+}
+.pasta-img {
+  width: 20%;
+  height: 10%;
+  margin-top: 6%;
+}
+.item1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #bbbab8;
+
+  height: 50%;
+}
+.foodMenu-Container1 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.foodMenu-Container1-item {
+  display: flex;
+}
+
+.burger-heading {
+  margin-bottom: 0%;
+  padding: 0%;
+}
+.burger-price {
+  margin-bottom: 0%;
+  padding: 0%;
+  color: #fea116;
+}
+.p5 {
+  margin-top: 3%;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 3%;
 }
