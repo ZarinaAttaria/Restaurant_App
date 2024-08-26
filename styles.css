@@ -47,21 +47,38 @@ body {
   color: white;
   padding-left: 10%;
   padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures alignment remains consistent */
 }
+
 ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Allows the menu to take up remaining space */
 }
+
 .navbar1 {
-  width: 400px;
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
+
+.menu-icon {
+  display: none;
+  position: absolute; /* Keeps it from affecting other elements */
+  right: 10%; /* Adjust position as needed */
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 4; /* Ensure it stays above other elements */
+}
+
 .restoran-logo {
-  width: 30%;
-  height: 80%;
+  width: 30%; /* Fixed size to prevent squeezing */
+  height: auto;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 .center-container {
   z-index: 3;
@@ -562,4 +579,86 @@ h1 {
 .home-contact {
   display: flex;
   gap: 10%;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #0f172b;
+  margin-top: 60px;
+  right: 10%;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .foodImage {
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar1 {
+    display: none;
+  }
+
+  .navbar.active .navbar1 {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #0f172b;
+    padding: 10px;
+  }
+
+  .restoran-logo {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    flex-shrink: 0;
+  }
+  .center-container1 {
+    height: 200px;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .masterChefImage {
+    margin-top: 10%;
+    height: 25%;
+    width: 20%;
+    margin-left: 4%;
+  }
+  .aboutUs-container {
+    height: 1700px;
+
+    background-color: #dee2e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 690px;
+  }
+  .aboutUs-centerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUS-container2 {
+    margin-top: 0;
+  }
 }
