@@ -360,3 +360,75 @@ h1 {
   margin-right: 0;
   margin-left: 3%;
 }
+.reservation-Container {
+  height: 550px;
+  display: flex;
+  margin-top: 10%;
+  background-color: #0f172b;
+  color: white;
+}
+.reservation {
+  margin-left: 7%;
+  font-family: "Dancing Script", cursive;
+  color: #fea116;
+}
+.bookTableHeading {
+  margin-left: 7%;
+}
+.reservation-img {
+  height: 550px;
+  width: 700px;
+}
+.form-input1 {
+  display: flex;
+  padding: 10px;
+  margin-left: 5%;
+  gap: 5%;
+}
+.input {
+  width: 40vh;
+  height: 7vh;
+}
+.input1 {
+  width: 42vh;
+  height: 8vh;
+}
+.formInput2 {
+  padding: 10px;
+  margin-left: 5%;
+}
+.Special-input {
+  width: 78vh;
+  height: 13vh;
+}
+.bookNowBtn {
+  color: white;
+  background-color: #fea116;
+  border: none;
+  height: 50px;
+  width: 78vh;
+  margin-top: 8%;
+  margin-left: 8%;
+}
+.reservation-Container-1 {
+  margin-top: 5%;
+}
+.team-Members-Container {
+  height: 638px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-Members-Container-Center {
+  height: 484px;
+  background-color: pink;
+}
+.team-Members-heading {
+  font-family: "Dancing Script", cursive;
+  color: #fea116;
+}
+.chef-Image {
+  height: 50%;
+  width: 20%;
+  border-radius: 15%;
+}
