@@ -9,12 +9,13 @@
   <body>
     <div class="top-Container">
       <div class="navbar">
-        <ul>
+        <ul class="navbar-ul">
           <li>
             <img src="restoran.png" class="restoran-logo" />
           </li>
           <div class="navbar1">
             <li class="homelink">HOME</li>
+
             <li class="contactlink">CONTACT</li>
             <li class="bookTableBtn">Book A Table</li>
           </div>
@@ -30,16 +31,86 @@
 
       <div class="center-container">
         <div>
-          <h1>Enjoy Our</h1>
-          <h1>Delicious Meal</h1>
-          <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          <p class="p1">consectetur adipisicing elit. Hic, animi</p>
-          <button class="bookTableBtn1">Book A Table</button>
+          <h1>Contact Us</h1>
+          <div class="contact-ul-div">
+            <ul class="contactus-Ul">
+              <li class="home-link">HOME</li>
+              /
+              <li class="contact-link">CONTACT</li>
+            </ul>
+          </div>
         </div>
-
-        <img src="food.webp" class="foodImage" />
       </div>
     </div>
+    <div class="contactUs-container">
+      <div class="contactUs-center-container">
+        <h2 class="h2-contact">Contact Us</h2>
+        <h1 class="h1-contact">Contact For Any Query</h1>
+        <div class="contactUs-center-container-top">
+          <div class="contact1">
+            <h2 class="bookingHeading">Booking</h2>
+            <div class="email-container">
+              <img src="email.png" class="emailImage" />
+              <p class="email">booking@example.com</p>
+            </div>
+          </div>
+          <div class="contact1">
+            <h2 class="bookingHeading">General</h2>
+            <div class="email-container">
+              <img src="email.png" class="emailImage" />
+              <p class="email">general@example.com</p>
+            </div>
+          </div>
+          <div class="contact1">
+            <h2 class="bookingHeading">Technical</h2>
+            <div class="email-container">
+              <img src="email.png" class="emailImage" />
+              <p class="email">technical@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="submit-form-container">
+          <img src="map.png" class="mapImage" />
+          <form class="contact-form">
+            <div class="form-input1">
+              <input type="text" class="input" placeholder="Your Name" />
+
+              <input
+                type="email"
+                class="input emailInput"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-input1">
+              <input type="text" class="input" placeholder="Subject" />
+            </div>
+            <div class="formInput2">
+              <input class="Special-input" type="text" placeholder="Message" />
+            </div>
+            <input type="submit" class="bookNowBtn" value="SEND MESSAGE" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div>
+        <ul class="footer-container-center">
+          <li>© Your Site Name,All Right Reserved.</li>
+          <div class="home-contact">
+            <li>Home</li>
+            <li>Contact</li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector(".menu-icon")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.style.display =
+            mobileMenu.style.display === "block" ? "none" : "block";
+        });
+    </script>
   </body>
 </html>
