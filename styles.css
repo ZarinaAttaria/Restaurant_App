@@ -594,6 +594,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
   .center-container {
     display: flex;
     flex-direction: column;
@@ -712,5 +715,87 @@ h1 {
   .foodMenu-Container1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reservation-Container {
+    display: flex;
+    flex-direction: column;
+
+    height: 950px;
+  }
+  .reservation-img {
+    height: 350px;
+    width: 400px;
+  }
+  .bookTableHeading {
+    font-size: 25px;
+  }
+  .form-input1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+  }
+  .input {
+    width: 40vh;
+    margin-top: 2%;
+    height: 6vh;
+  }
+  .input1 {
+    width: 41vh;
+    height: 8vh;
+    margin-top: 3%;
+  }
+  .formInput2 {
+    padding: 10px;
+    margin-left: 3%;
+  }
+  .Special-input {
+    width: 40vh;
+    height: 13vh;
+  }
+  .bookNowBtn {
+    color: white;
+    background-color: #fea116;
+    border: none;
+    height: 50px;
+    width: 41vh;
+    margin-top: 3%;
+    margin-left: 6%;
+  }
+  .chef-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-Members-Container {
+    top: 0%;
+  }
+  .testimonials-Container {
+    margin-top: 700px;
+  }
+  .chef1 {
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonials-Container {
+    background-color: white;
+  }
+  .footer-container {
+    margin-top: 300px;
+  }
+  .testimonial1 {
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .footer-container-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    height: 100px;
   }
 }
