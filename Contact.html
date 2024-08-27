@@ -9,23 +9,23 @@
   <body>
     <div class="top-Container">
       <div class="navbar">
-        <ul class="navbar-ul">
-          <li>
-            <img src="restoran.png" class="restoran-logo" />
+        <ul>
+          <li class="name">
+            <div>
+              <img class="fork-img" src="image-removebg-preview.png" alt="" />
+              <a href="#home" class="restoran">Restoran</a>
+            </div>
           </li>
-          <div class="navbar1">
-            <li class="homelink">HOME</li>
-
-            <li class="contactlink">CONTACT</li>
-            <li class="bookTableBtn">Book A Table</li>
-          </div>
+          <li class="menu-item-nav home-item"><a href="index.html">HOME</a></li>
+          <li class="menu-item-nav contact">
+            <a href="Contact.html">CONTACT</a>
+          </li>
+          <li class="menu-item-nav">
+            <button class="bookTableBtn1">
+              <a href="#book">Book a Table</a>
+            </button>
+          </li>
           <li class="menu-icon"><span>&#9776;</span></li>
-
-          <div class="mobile-menu" id="mobile-menu">
-            <li class="homelink"><a href="contact.html">HOME</a></li>
-            <li class="contactlink"><a href="contact.html">CONTACT</a></li>
-            <li class="bookTableBtn">Book A Table</li>
-          </div>
         </ul>
       </div>
 
@@ -34,9 +34,9 @@
           <h1>Contact Us</h1>
           <div class="contact-ul-div">
             <ul class="contactus-Ul">
-              <li class="home-link">HOME</li>
+              <li class="home-link"><a href="index.html">HOME</a></li>
               /
-              <li class="contact-link">CONTACT</li>
+              <li class="contact-link"><a href="Contact.html">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -104,12 +104,11 @@
       </div>
     </div>
     <script>
+      const navbar = document.querySelector(".navbar");
       document
         .querySelector(".menu-icon")
         .addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.style.display =
-            mobileMenu.style.display === "block" ? "none" : "block";
+          navbar.classList.toggle("active");
         });
       document
         .querySelector(".homelink")

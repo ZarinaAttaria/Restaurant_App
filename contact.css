@@ -26,6 +26,55 @@ body {
   height: 300px;
   margin-top: 5%;
 }
+.navbar ul {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  list-style: none;
+}
+.restoran {
+  color: #fea116;
+}
+.navbar .name {
+  font-size: 32px;
+  font-weight: bolder;
+
+  margin-right: auto;
+}
+.menu-icon {
+  display: block;
+}
+.menu-item-nav {
+  display: none;
+}
+.navbar.active .menu-item-nav {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-right: 0;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.navbar.active .home-item {
+  margin-top: 30px;
+}
+.navbar.active ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar.active .menu-icon {
+  align-self: flex-end;
+  position: relative;
+  top: -198px;
+}
+/* before */
 .navbar1 {
   display: none;
 }
@@ -36,21 +85,21 @@ body {
   font-size: 30px;
   z-index: 4;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .mobile-menu {
   display: none;
-
+  position: absolute;
   top: 100%;
+  margin-left: 100px;
   left: 0;
+
   right: 0;
-  background-color: #0f172b;
+
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-}
-
-.navbar.active .mobile-menu {
-  display: flex;
 }
 
 .restoran-logo {
@@ -271,6 +320,65 @@ h1 {
   text-align: center;
 }
 @media (min-width: 769px) {
+  .navbar {
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    top: 30px;
+    margin: auto;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .navbar .name {
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .navbar ul li {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: large;
+    color: orange;
+  }
+  .navbar .contact {
+    color: white;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .menu-item-nav {
+    display: inline;
+  }
+  .home-item a {
+    text-decoration: none;
+    color: white;
+  }
+  .contact a {
+    color: white;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn a {
+    color: white;
+  }
+
+  a:hover {
+    color: #feab2e;
+  }
+
+  /* befire? */
+
   body {
     width: 100%;
     height: auto;
@@ -313,14 +421,7 @@ h1 {
     z-index: 2;
   }
   .navbar {
-    position: relative;
     z-index: 3;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   ul {
@@ -331,27 +432,6 @@ h1 {
     flex-grow: 1;
   }
 
-  .navbar1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 5%;
-  }
-
-  .menu-icon {
-    display: none;
-    position: absolute;
-    right: 10%;
-    cursor: pointer;
-    font-size: 30px;
-    z-index: 4;
-  }
-
-  .restoran-logo {
-    width: 15%;
-    margin-top: 0%;
-    height: auto;
-    flex-shrink: 0;
-  }
   .center-container {
     z-index: 3;
     position: relative;

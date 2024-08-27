@@ -10,21 +10,22 @@
     <div class="top-Container">
       <div class="navbar">
         <ul>
-          <li>
-            <img src="restoran.png" class="restoran-logo" />
+          <li class="name">
+            <div>
+              <img class="fork-img" src="image-removebg-preview.png" alt="" />
+              <a href="#home" class="restoran">Restoran</a>
+            </div>
           </li>
-          <div class="navbar1">
-            <li class="homelink">HOME</li>
-            <li class="contactlink"><a href="contact.html">CONTACT</a></li>
-            <li class="bookTableBtn">Book A Table</li>
-          </div>
+          <li class="menu-item-nav home-item"><a href="index.html">HOME</a></li>
+          <li class="menu-item-nav contact">
+            <a href="Contact.html">CONTACT</a>
+          </li>
+          <li class="menu-item-nav">
+            <button class="bookTableBtn1">
+              <a href="#book">Book a Table</a>
+            </button>
+          </li>
           <li class="menu-icon"><span>&#9776;</span></li>
-
-          <div class="mobile-menu" id="mobile-menu">
-            <li class="homelink"><a href="contact.html">HOME</a></li>
-            <li class="contactlink"><a href="contact.html">CONTACT</a></li>
-            <li class="bookTableBtn">Book A Table</li>
-          </div>
         </ul>
       </div>
 
@@ -35,7 +36,9 @@
           <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <p class="p1">consectetur adipisicing elit. Hic, animi</p>
-          <button class="bookTableBtn1">Book A Table</button>
+          <button class="bookTableBtn1">
+            <a href="#book">Book a Table</a>
+          </button>
         </div>
 
         <img src="food.webp" class="foodImage" />
@@ -256,7 +259,7 @@
       </div>
     </div>
 
-    <div class="reservation-Container">
+    <div class="reservation-Container" id="book">
       <img src="reservation.PNG" class="reservation-img" />
       <div class="reservation-Container-1">
         <h3 class="reservation">Reservation</h3>
@@ -386,12 +389,11 @@
     </div>
 
     <script>
+      const navbar = document.querySelector(".navbar");
       document
         .querySelector(".menu-icon")
         .addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.style.display =
-            mobileMenu.style.display === "block" ? "none" : "block";
+          navbar.classList.toggle("active");
         });
       document
         .querySelector(".contactlink")
