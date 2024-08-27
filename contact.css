@@ -101,7 +101,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
+.contact-us-heading {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 .restoran-logo {
   width: 35%;
   height: auto;
@@ -111,7 +115,7 @@ a {
 
 .top-Container {
   position: relative;
-  height: 400px;
+  height: 500px;
 
   background-color: #0f172b;
   overflow: hidden;
@@ -201,6 +205,9 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 5%;
+  margin: 0;
+  padding: 0;
+  margin-top: 6%;
 }
 .contactUs-container {
   display: flex;
@@ -386,6 +393,9 @@ h1 {
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
+  .contact-link {
+    color: #fea116;
+  }
 
   .top-Container {
     position: relative;
@@ -446,11 +456,11 @@ h1 {
     width: 30%;
     height: 30%;
   }
-  h1 {
+
+  .contact-us-heading {
     margin: 0;
     padding: 0;
-    font-weight: 900;
-    margin-left: 50px;
+    text-align: center;
   }
   .p1 {
     margin: 0;
