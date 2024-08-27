@@ -26,24 +26,31 @@ body {
   height: 300px;
   margin-top: 5%;
 }
-
-.menu-icon {
-  display: block;
-}
-
 .navbar1 {
   display: none;
 }
 
-.navbar.active .navbar1 {
-  display: flex;
-  position: absolute;
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 4;
+}
+
+.mobile-menu {
+  display: none;
+
   top: 100%;
   left: 0;
   right: 0;
-  flex-direction: column;
   background-color: #0f172b;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
+}
+
+.navbar.active .mobile-menu {
+  display: flex;
 }
 
 .restoran-logo {
