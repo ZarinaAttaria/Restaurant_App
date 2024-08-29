@@ -191,7 +191,7 @@ h1 {
 }
 
 .center-container1 {
-  height: 236px;
+  height: 266px;
   width: 160vh;
 
   display: flex;
@@ -527,6 +527,7 @@ h1 {
 }
 .designation {
   margin: 0;
+  margin-bottom: 5%;
 }
 .rectangle {
   width: 38px;
