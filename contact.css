@@ -243,6 +243,8 @@ h1 {
 }
 .email {
   color: rgb(141, 139, 139);
+  margin: 0;
+  margin-top: 1%;
   margin-left: 1%;
 }
 .bookingHeading {
@@ -520,6 +522,7 @@ h1 {
   }
   .input {
     width: 80vh;
+    padding: 10px;
 
     height: 7vh;
   }
@@ -528,6 +531,7 @@ h1 {
   }
   .input1 {
     width: 42vh;
+
     height: 8vh;
   }
   .formInput2 {
@@ -537,6 +541,7 @@ h1 {
   .Special-input {
     width: 80vh;
 
+    padding: 10px;
     height: 22vh;
   }
   .bookNowBtn {
