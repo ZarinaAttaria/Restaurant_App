@@ -55,4 +55,6 @@ To run the Restaurant App locally, follow these steps:
    git clone https://github.com/ZarinaAttaria/Restaurant_App.git
    ```
 2. **Executing app**:
+   ```bash
    Use a Live Server to run it.
+   ```
