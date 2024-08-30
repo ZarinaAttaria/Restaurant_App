@@ -1,6 +1,18 @@
 {
   "routes": [
     {
+      "src": "/home",
+      "dest": "/home.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/Contact.html"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/home.html"
     }
